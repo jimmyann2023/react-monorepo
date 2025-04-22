@@ -6,6 +6,6 @@
   "files": [
     "base.json",
     "node.json",
-    "web.json"
+    "vite.json"
   ]
 }

@@ -4,26 +4,23 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite  --mode development",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "imports": {
+    "#/*": "./src/*"
   },
   "dependencies": {
     "react": "catalog:",
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@repo-core/shadcn-ui": "workspace:*",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.22.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^16.0.0",
-    "typescript": "catalog:",
-    "typescript-eslint": "^8.26.1",
     "vite": "catalog:"
   }
 }
