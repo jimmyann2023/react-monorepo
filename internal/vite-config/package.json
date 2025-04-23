@@ -1,0 +1,33 @@
+{
+  "name": "@repo/vite-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stub": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "catalog:",
+    "dayjs": "catalog:",
+    "dotenv": "catalog:",
+    "pkg-types": "^2.1.0",
+    "rollup": "catalog:",
+    "rollup-plugin-visualizer": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-compression": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "vite-plugin-lazy-import": "catalog:"
+  }
+}
