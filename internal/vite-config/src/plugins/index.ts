@@ -7,10 +7,12 @@ import type {
   LibraryPluginOptions,
 } from '../typing';
 
+import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { visualizer as viteVisualizerPlugin } from 'rollup-plugin-visualizer';
 import viteCompressPlugin from 'vite-plugin-compression';
 import viteDtsPlugin from 'vite-plugin-dts';
+
 /**
  * 获取条件成立的 vite 插件
  * @param conditionPlugins
@@ -35,6 +37,10 @@ async function loadCommonPlugins(options: CommonPluginOptions): Promise<Conditio
     {
       condition: true,
       plugins: () => [react()],
+    },
+    {
+      condition: true,
+      plugins: () => [tailwindcss()],
     },
     {
       condition: isBuild && !!visualizer,
