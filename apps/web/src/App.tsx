@@ -1,9 +1,12 @@
-import './App.css';
+import { Button } from '@repo/shadcn-ui/components/button';
 
 function App() {
   return (
     <>
-      <div className="bg-destructive text-blue-500">Hello word</div>
+      <Button className="m-5 cursor-pointer" size="lg" variant="destructive">
+        shadcn-ui
+      </Button>
+      <div className="text-blue-500">Hello word</div>
     </>
   );
 }
